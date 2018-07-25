@@ -1,11 +1,9 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-//const char* ssid = "DecentBoysOf201";
-//const char* password = "amravalochele";
 
-const char* ssid = "Romeo_wifi";
-const char* password = "romeowifi";
+const char* ssid = "Your_wifi";
+const char* password = "your_wifi";
 
 String address, data, payload;
 
@@ -22,8 +20,7 @@ void setup ()
         Serial.println(++wi);
     }
     Serial.println("\nConnection Successful");
-    address = "http://www.ahsanromeo.me/fpm/load.php?data=";
-    //address = "http://www.ahsanromeo.me/fpm/test.php?data=";
+    address = "http://www.yourwebsite.me/fpm/load.php?data=";
     data = "";
     address.trim();
 }
